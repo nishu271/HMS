@@ -1,0 +1,31 @@
+<html>
+<title>
+Hostel Management System
+</title>
+
+<head>
+</head>
+
+<body>
+<h1 align = "center"> Hostel Management System </h1>
+<p1>The Hostel Management System is a an online portal to make the day to day Hostel Activities more efficient. It is going to have 4 submodules :</p1> <br/>
+
+<h2>Security</h2>
+<p>The existing security system in place is pretty traditional. Students have to fill an entry at the security while entering or leaving the hostel. Guests have to do the same as well. There is no online record for this and if some security log gets misplaced, you lose the complete logging information for a large period. With a security portal the students/security guards can enter the student logs directly into the database. This system can later be made more efficient by using students' id cards instead of manually entering the details.</p>
+
+<form align = "center" name = "myForm" action = "login_success.htm" onsubmit= "return validateForm()" method = "post">
+<table align = "center">
+<tr><td>Username: </td><td><input type="text" name="uname"></td></tr>
+<tr><td>Room No: </td><td><input type="text" name="room"></td></tr>
+<tr><td>Log: </td><td><input type="radiobutton"></td></tr>
+<tr><td><input type="submit" value="Submit"></td><td><input type="reset" value="clear"></td></tr>
+</table>
+</form>
+
+<form name = "generateLog">
+<input type="submit" value = "Generate Log">
+</form>
+
+<br><br><a href="index.htm">Home</a>
+</body>
+</html>
