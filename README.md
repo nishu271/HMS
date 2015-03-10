@@ -1,2 +1,2 @@
 # HMS
-Hostel Managemente System
+Hostel Management System
