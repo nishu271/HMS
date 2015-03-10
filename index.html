@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<title>
+Hostel Management System
+</title>
+
+<head>
+<script type="text/javascript">
+
+function validateForm()
+{
+    var uname = document.forms["myForm"]["name"].value;
+    if (uname == null || uname == "") {
+        alert("Name must be filled out");
+    }
+    else if (uname.length < 8) {
+        alert("Name must have atleast 8 characters");
+        return false;
+    }
+    var pwd = document.forms["myForm"]["pwd"].value;
+    if (pwd == null || pwd == "" || pwd.length < 8) {
+        alert("Password must have atleast 8 characters");
+        return false;
+    }
+    if (uname = "shubham123" && pwd == "password") {
+        alert("Hurray, Login Successful!");
+        return true;
+    }
+    else {
+        alert("incorrect login!");
+        return false;
+    }
+}
+</script> 
+</head>
+<body>
+<h1 align = "center"> Hostel Management System </h1>
+
+<form align = "center" name = "myForm" action = "login_success.htm" onsubmit= "return validateForm()" method = "post">
+<table align = "center">
+<tr>
+<td>Username: </td><td><input type="text" name="name"></td><br>
+<tr><td>Password: </td><td><input type="password" name="pwd"></td><br>
+</tr>
+<tr><td><input type="submit" value="Submit">
+</td>
+<td><input type="reset" value="clear">
+</td>
+</tr>
+</table>
+</form>
+
+<br>
+<p1>The Hostel Management System is a an online portal to make the day to day Hostel Activities more efficient. It is going to have 4 submodules :</p1> <br/>
+
+<br/>
+<li>  <a href="activity.htm">Activity Management</a>
+<li> <a href ="inventory.htm"> Inventory Management</a>
+<li> <a href="mess.htm">Mess Management</a>
+<li> <a href="security.htm">Security</a>
+
+</body>
+</html>
